@@ -1,4 +1,7 @@
-const ProductNameRenderer = (props) => {
+import React from 'react';
+import { ProductNameRendererProps } from '../types';
+
+const ProductNameRenderer: React.FC<ProductNameRendererProps> = (props) => {
   return (
     <div>
       <img

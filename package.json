@@ -1,7 +1,7 @@
 {
   "name": "poke-content",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://naktyl.github.io/poke-content",
   "type": "module",
   "scripts": {

@@ -1,4 +1,6 @@
-export const items = [
+import { RawItemData } from "../types";
+
+export const items: RawItemData[] = [
   {
     id: 1,
     name: "Coffret Rosemary Tournoi Premium",
@@ -687,7 +689,7 @@ export const items = [
   {
     id: 57,
     name: "Pokéball Q4 2023",
-    image: "/poke-content/images/fr/items/pokeball_q4_2023.jpg",
+    image: "/poke-content/images/fr/items/pokeball_q4_2023.png",
     msrp: 17.99,
     boosterCount: 3,
     boosters: [
@@ -884,18 +886,6 @@ export const items = [
     id: 73,
     name: "Coffret Archéduc ex",
     image: "/poke-content/images/fr/items/coffret_archeduc_ex.jpg",
-    msrp: 25.99,
-    boosterCount: 4,
-    boosters: [
-      { id: "swsh9", count: 1 },
-      { id: "sv4", count: 1 },
-      { id: "sv6", count: 2 },
-    ],
-  },
-  {
-    id: 74,
-    name: "Coffret Archéduc ex",
-    image: "/poke-content/images/fr/items/coffret_archeduc.jpg",
     msrp: 25.99,
     boosterCount: 4,
     boosters: [

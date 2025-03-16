@@ -1,4 +1,6 @@
-export const boosters = {
+import { IBooster } from "../types";
+
+export const boosters: Record<string, IBooster> = {
   sm10: {
     icon: "/poke-content/images/fr/boosters/icons/sm10.png",
     name: "SL10 Alliance Infaillible",

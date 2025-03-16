@@ -1,4 +1,7 @@
-const BoosterCellRenderer = (props) => {
+import React from 'react';
+import { BoosterCellRendererProps } from '../types';
+
+const BoosterCellRenderer: React.FC<BoosterCellRendererProps> = (props) => {
   const { boosters } = props.data;
 
   return (
