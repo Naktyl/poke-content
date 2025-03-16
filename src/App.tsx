@@ -80,6 +80,8 @@ function App() {
       cellRenderer: ProductNameRenderer,
       autoHeight: true,
       filter: "agTextColumnFilter",
+      suppressMovable: true,
+      lockVisible: true,
     },
     {
       headerName: "Prix retail",
@@ -88,7 +90,9 @@ function App() {
       autoHeaderHeight: true,
       sortable: true, // Enable numeric sorting
       filter: "agNumberColumnFilter", // Numeric filter
-      hide: true, // Hide this column
+      hide: true, // Initial state is hidden
+      suppressMovable: true,
+      lockVisible: true,
     },
     {
       headerName: "Prix par booster",
@@ -99,7 +103,9 @@ function App() {
       autoHeaderHeight: true,
       sortable: true, // Enable numeric sorting
       filter: "agNumberColumnFilter", // Numeric filter
-      hide: true, // Hide this column
+      hide: true, // Initial state is hidden
+      suppressMovable: true,
+      lockVisible: true,
     },
     {
       headerName: "Boosters",
@@ -107,6 +113,9 @@ function App() {
       cellRenderer: BoosterCellRenderer,
       autoHeight: true, // Ensure the cell adjusts its height
       sortable: false,
+      suppressMovable: true, // Prevent column from being moved
+      lockVisible: true, // Prevent column from being hidden
+      lockPosition: 'right' // Keep it on the right side of the grid
     },
   ]);
 
